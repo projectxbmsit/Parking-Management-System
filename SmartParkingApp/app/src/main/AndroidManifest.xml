@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.projectx.spa">
+
+    <uses-sdk
+        android:maxSdkVersion="30"
+        android:minSdkVersion="16"
+        android:targetSdkVersion="30"
+        tools:ignore="GradleOverrides" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartParkingApp">
+        <activity
+            android:name=".activities.HomeActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.RegisterActivity" />
+        <activity android:name=".activities.AvailableSlotsActivity" />
+        <activity android:name=".activities.AdminHomeActivity" />
+        <activity android:name=".activities.VehicleEntryActivity" />
+        <activity android:name=".activities.VehicleExitActivity" />
+        <activity android:name=".activities.ParkedHistoryActivity" />
+        <activity android:name=".activities.ParkedVehiclesActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
